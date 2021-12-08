@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8' />
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>HIQ and pfe-tabs</title>
+
+  <link rel='icon' href='data:image/png;base64,' />
+  <link rel='stylesheet' crossorigin='anonymous' href='https://cdn.jsdelivr.net/npm/hiq@4.1.9/dist/hiq.css' integrity='sha256-lmhDSTOvoVL6vf39JzQIJnJiey65rv7M/AW/2+PDzzs=' />
+  <script type=module src='./esm/wc.js'></script>
+</head>
+
+<body>
+  <main style='max-width: 100ch; margin: 50px auto 0; padding: 0;'>
+    <h1>
+      PatternFly Elements <a href='https://patternflyelements.org/components/tabs/'>pfe-tabs</a>
+      with <a href='https://github.com/jonathanharrell/hiq#readme'>HIQ CSS</a></h1>
+    </h1>
+
+    <pfe-tabs>
+
+      <pfe-tab role="heading" slot="tab">
+        <h3>Demo Buttons</h3>
+      </pfe-tab>
+      <pfe-tab-panel role="region" slot="panel">
+        <h4>Demo buttons from underlying CSS</h4>
+        <div style='display: grid; gap: 1rem; grid: auto-flow / repeat(auto-fit, 8rem);'>
+          <button>Button</button>
+          <button type="button">Button</button>
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+          <button type="button" disabled>Disabled</button>
+          <a role="button">Link as button</a>
+          <a class="button">Link with button styling</a>
+        </div>
+      </pfe-tab-panel>
+
+      <pfe-tab role="heading" slot="tab">
+        <h3>Demo Table</h3>
+      </pfe-tab>
+      <pfe-tab-panel role="region" slot="panel">
+        <h4>Demo table from underlying CSS</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">Column 1</th>
+                    <th scope="col">Column 2</th>
+                    <th scope="col">Column 3</th>
+                    <th scope="col">Column 4</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Row 1</th>
+                    <td>Row 1 Cell 1</td>
+                    <td>Row 1 Cell 2</td>
+                    <td>Row 1 Cell 3</td>
+                </tr>
+                <tr>
+                    <th scope="row">Row 2</th>
+                    <td>Row 2 Cell 1</td>
+                    <td>Row 2 Cell 2</td>
+                    <td>Row 2 Cell 3</td>
+                </tr>
+                <tr>
+                    <th scope="row">Row 3</th>
+                    <td>Row 3 Cell 1</td>
+                    <td>Row 3 Cell 2</td>
+                    <td>Row 3 Cell 3</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th scope="col">Column 1</th>
+                    <th scope="col">Column 2</th>
+                    <th scope="col">Column 3</th>
+                    <th scope="col">Column 4</th>
+                </tr>
+            </tfoot>
+        </table>
+      </pfe-tab-panel>
+    </pfe-tabs>
+  </main>
+</body>
+</html>

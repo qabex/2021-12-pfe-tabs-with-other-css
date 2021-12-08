@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "version": "0.0.0",
+  "devDependencies": {
+    "@patternfly/pfe-tabs": "^1.12.2",
+    "@rollup/plugin-node-resolve": "^13.0.6",
+    "qsrv": "^0.1.9",
+    "rollup": "^2.60.2"
+  },
+  "scripts": {
+    "preserve": "npm -s run build",
+    "serve": "qsrv --root . -f ./index.html -- ./ ./esm",
+    "clean": "rm -rf ./esm/*",
+    "build": "rollup --config",
+    "watch": "rollup --config --watch"
+  }
+}
